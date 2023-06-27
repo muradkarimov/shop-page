@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav__logo{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.navbar{
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: -73px;
+    left: 0;
+    right: 0;
+    transform: translateY(70px);
+    transition: transform 500ms ease;
+    -webkit-transition: transform 500ms ease;
+    background-color:#ffffff !important;
+    z-index: 5;
+    .container-fluid{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .nav-item{
+        margin-right: 45px;
+    }
+    .active{
+       
+        a{
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 0px;
+            display: inline-block;
+            color: #71cd14;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            margin-top: 7px !important;
+        }
+    }
+    .nav-link{
+        font-size: 13px;
+        font-weight: 400;
+        color: #2a2a2a !important;
+        display: inline-block;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    // .nav-link1{
+    //     padding-top: 1.25px;
+    // }
+    a:hover{
+        color: #71cd14 !important;
+    }
+    .dropdown-menu{
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .dropdown-item{
+        color: black  !important;
+        line-height: 45px !important;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        color: #2a2a2a !important;
+        padding: 0px 30px;
+        transition: all 150ms linear;
+        border-bottom: 1px solid #ededed;
+    }
+    .dropdown-item:hover{
+        background-color: #71cd14 !important;
+        color: white !important;
+    }
+    i{
+        margin-right: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: #4a4a4a;
+        text-align: center;
+        transition: all 300ms linear 0s;
+    }
+    i:hover{
+        color: #71cd14;
+    }
+    // .navbar-toggler{
+    //     background-color: black !important;
+    // }
+    .icon-bar{
+        display: block;
+        width: 25px;
+        height: 4px;
+        background: #1641ff;
+        margin: auto;
+        margin-bottom: 4px;
+        transition: all 400ms linear;
+        cursor: pointer;
+    }
+}
+
+
+
+@media only screen and (min-width: 991px){
+    .navbar__right{
+        position: absolute;
+        right: 30px;
+    }
+}

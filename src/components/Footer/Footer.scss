@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+footer{
+    margin-top: 50px;
+    background: #0d0d1f;
+    padding-top: 120px ;
+    width: 100%;
+    .row{
+        --bs-gutter-x:0px !important;
+    }
+    .col-lg-2, .col-lg-4{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    h5{
+        color: #ffffff;
+        margin-bottom: 35px;
+        font-size: 18px !important;
+    }
+    li{
+        margin-bottom: 15px;
+         list-style: none;
+         a{
+            transition: all 300ms linear 0s;
+             color: #797979;
+             cursor: pointer;
+         }
+         a:hover{
+            color: #ffffff !important;
+         }
+    }
+    p{
+        margin-bottom: 10px;
+        color: #797979;
+    }
+    .form{
+        margin-top: 25px;
+        position: relative;
+        input{
+            height: 50px;
+            border: none;
+            width: 100% !important;
+            font-weight: 300;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            padding-left: 20px;
+            border-radius: 0;
+            font-size: 14px;
+            padding: 10px;
+        }
+        button{
+            font-size: 12px;
+            text-transform: uppercase;
+            background: #71cd14;
+            color: #ffffff;
+            border-radius: 0;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            padding: 8px 12px;
+            border: 0;
+            position: relative;
+            // left: -12%;
+            transition: all 300ms linear 0s;
+        }
+        button:hover{
+            opacity: 0.8 !important;
+    
+        }
+    }
+    .form-control:focus{
+        outline: none !important;
+        background: rgba(255,255,255,0.15);
+        color: #ffffff;
+        padding-left: 20px;
+        border-radius: 0;
+        font-size: 14px;
+        padding: 10px;
+    }
+    span{
+        color: white;
+        font-size: 14px;
+        // letter-spacing: 1px;
+    }
+    .medias{
+        text-align: center;
+        a{
+            background: rgba(255,255,255,0.15);
+            margin-left: 5px;
+            width: 40px;
+            color: #ffffff !important;
+            display: inline-grid;
+            text-align: center;
+            height: 40px;
+            align-content: center;
+            transition: all 300ms linear 0s;
+        }
+        a:hover{
+            background: #71cd14 !important;
+        }
+    }
+}
