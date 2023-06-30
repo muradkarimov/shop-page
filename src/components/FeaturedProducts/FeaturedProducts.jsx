@@ -9,7 +9,7 @@ function FeaturedProducts(props) {
       <div className={`col-lg-${per} col-md-6 text-center  product`}>
         <div className='img__area'>
             <img src={img} alt="" className='w-100 img-fluid'/>
-            <div className='img__icon'>
+            {/* <div className='img__icon'>
                 <a href="">
                     <i className='bi bi-eye'></i>
                 </a>
@@ -19,7 +19,7 @@ function FeaturedProducts(props) {
                 <a href="">
                     <i className='bi bi-cart-dash'></i>
                 </a>
-            </div>
+            </div> */}
         </div>
         <div className="product__info">
             <a href="">

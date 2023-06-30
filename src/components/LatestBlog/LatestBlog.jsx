@@ -1,5 +1,6 @@
 import React from 'react'
 import './LatestBlog.scss'
+import { Link } from 'react-router-dom';
 
 function LatestBlog(props) {
     const {img}= props;
@@ -19,9 +20,9 @@ function LatestBlog(props) {
                     </a>
                 </div>
                 <div className='middle__part1'>
-                    <a href="">
+                    <Link to="/BlogContainer">
                     Ford clever bed stops your sleeping partner hogging the whole
-                    </a>
+                    </Link>
                 </div>
                 <div className="middle__part2">
                     <p>

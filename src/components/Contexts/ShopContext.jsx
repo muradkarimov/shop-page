@@ -1,4 +1,5 @@
 import { createContext  } from "react";
+import { useState } from "react";
 export const ShopContext = createContext();
 function ShopProvider(props) {
     const featuredProducts =[
@@ -148,8 +149,20 @@ function ShopProvider(props) {
         }
       ]
 
+      function findProduct (id) {
+        return featuredProducts.find(i => i.id === id);
+      }
 
-    return <ShopContext.Provider value={{featuredProducts}}>
+      const [addedProduct,setAddedProduct] = useState([]);
+      // function addToBag(id,img,name){
+      //   setAddedProduct([...addedProduct, id, name, img])
+      // }
+      const addToBag = id => setAddedProduct([...addedProduct, id]);
+      const removeFromBag = id => setAddedProduct(addedProduct.filter(i => i!==id));
+     
+
+
+    return <ShopContext.Provider value={{featuredProducts, findProduct, addToBag, removeFromBag, addedProduct}} >
         {props.children}
     </ShopContext.Provider>
 

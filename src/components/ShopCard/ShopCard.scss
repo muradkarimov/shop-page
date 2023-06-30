@@ -1,0 +1,189 @@
+.product{
+    background-color: initial;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__img__area{
+        background-color: rgb(248,250,252);
+        opacity: 1;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        position: relative;
+    }
+    &__image{
+        width: 100%;
+        height: 320px;
+        display: flex;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    button{
+        color: rgba(55,65,81,1);
+        background-color: rgba(255,255,255,1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 99px;
+        width: 2.25rem;
+        height: 2.25rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        border: 1px solid white;
+        
+    }
+    .product__details__area{
+        padding: 1.25rem 0.625rem;
+        .color__part{
+            display: flex;
+            .colors{
+                width: 1.5rem;
+                height: 1.5rem;
+                position: relative;
+                z-index: 10;
+                cursor: pointer;
+                border-width: 1px;
+                border-radius: 99px;
+                border-color: transparent;
+                .color{
+                    position: absolute;
+                    bottom: 0.125rem;
+                    left: 0.125rem;
+                    right: 0.125rem;
+                    top: 0.125rem;
+                    border-radius: 99px;
+                }
+                .violet{
+                    background-color: rgba(167,139,250,1);
+                }
+                .violet:focus{
+                    border: 1px solid rgb(139 92 246);
+                }
+                .yellow{
+                    background-color: rgb(250 ,204, 21,1);;
+                }
+                .orange{
+                    background-color: rgb(251 ,146, 60,1);;
+                }
+                .blue{
+                    background-color: rgb(56 ,189, 248,1);;
+                }
+                .green{
+                    background-color: rgb(74 ,222, 128,1);;
+                }
+            }
+        }
+        .product__title{
+            h2{
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 600;
+            }
+            p{
+                color: rgba(100,116,139,1);
+                font-size: .875rem;
+                line-height: 1.25rem;
+                margin-top: 0.25rem;
+            }
+        }
+    }
+    .product__details{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        .product__price{
+            font-size: 1rem;
+            line-height: 1.25rem;
+            padding: 0.325rem 0px;
+            font-weight: 500;
+            border-width: 2px;
+            border-radius: 0.5rem;
+            border-color: rgba(34,197,94,1);
+            display: flex;
+            align-items: center;
+            span{
+                line-height: 1;
+                color: rgba(34,197,94,1);
+            }
+        }
+        .product__star{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.125rem;
+            i{
+                color:rgba(251, 191, 36,1);
+                width: 1.25rem;
+                height: 1.25rem;
+                padding-bottom: 1px;
+            }
+            span{
+                color: rgba(100,116,139,1);
+                font-size: 1rem;
+                line-height: 1.25rem;
+                margin-left: 0.25rem;
+            }
+        }
+    }
+    
+}
+
+.additional__info{
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    opacity: 0;
+    left: 0.25rem;
+    right: 0.25rem;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+    visibility: hidden;
+    .adding{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        font-size: .75rem ;
+        line-height: 1rem ;
+        padding: 0.5rem 1rem ;
+        background-color: rgba(15, 23, 42,1) ;
+        position: relative ;
+        display: inline-flex ;
+        justify-content: center ;
+        align-items: center ;
+        height: auto ;
+        cursor: pointer ;
+        text-transform: none ;
+        border-radius: 999px ;
+        width: 115px;
+        transition: all 3s linear;
+        margin-left: 1rem;
+        a{
+            text-decoration: none;
+        }
+        i{
+            height: 0.875rem;
+            width: 0.875rem;
+            margin-bottom: 0.125rem;
+        }
+        span{
+            margin-left: 0.25rem !important;
+        }
+    }
+    .bag{
+        a{
+            color: rgba(248, 250, 252,1) ;
+        }
+    }
+    .view{
+        a{
+            color: rgba(51, 65, 85,1) !important;
+        }
+        
+        background-color: rgba(255, 255, 255,1) !important;
+        border: none;
+    }
+}

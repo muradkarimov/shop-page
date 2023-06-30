@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
+import { ShopContext } from '../Contexts/ShopContext'
 
 function Navbar() {
+  const {addedProduct} = useContext(ShopContext);
+  console.log(addedProduct)
   return (
+    
     <>
 <nav className="navbar navbar-expand-lg " aria-label="Fifth navbar example">
     <div className="container-fluid w-100">
@@ -43,21 +47,31 @@ function Navbar() {
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">PAGES</a>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#">TRACKING</a></li>
+              <li><Link className="dropdown-item" to="/Order">TRACKING</Link></li>
               <li><a className="dropdown-item" href="#">ELEMENTS</a></li>
             </ul>
           </li>
           
           <li className="nav-item">
-            <a className="nav-link " href='#!'>CONTACT</a>
+            <Link className="nav-link " to='/Contact'>CONTACT</Link>
           </li>
         </ul>
     </div>
         <div>
         <i className='bi bi-search'></i>
-        <i className='fa-solid fa-cart-shopping'></i>
         <i className='fa-regular fa-user'></i>
-        <i className='bi bi-heart'></i>
+        {/* <i className='fa-solid fa-cart-shopping'>
+        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">
+          {addedProduct > 0 && addedProduct}
+        </span>
+        </i> */}
+        <button type="button" class="position-relative cart">
+          <Link to="/Bag"><i className='fa-solid fa-cart-shopping'></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          {addedProduct.length > 0 && addedProduct.length}
+          </span></Link>
+        </button>
+        {/* <i className='bi bi-heart'></i> */}
      </div>
      
      </div>

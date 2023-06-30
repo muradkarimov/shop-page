@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact__container{
+    margin-top: 100px;
+    .contact__title{
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .form__container{
+        margin-bottom: 30px;
+        textarea{
+            border: 1px solid #f0e9ff;
+            border-radius: 5px;
+            height: 100% !important;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent;
+            width: 100%;
+        }
+        textarea:focus-visible{
+            outline: none;
+        }
+        input{
+            border: 1px solid #f0e9ff;
+            border-radius: 5px;
+            height: 48px;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent;
+            outline: none;
+            width: 100%;
+        }
+        button{
+            display: inline-block;
+            background: #71cd14;
+            padding: 0px 32px;
+            letter-spacing: 0.25px;
+            color: #fff;
+            font-family: "Roboto",sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 44px;
+            outline: none !important;
+            box-shadow: none !important;
+            text-align: center;
+            border: 1px solid #71cd14;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 300ms linear 0s;
+            border-radius: 5px;
+            width: 30%;
+        }
+        button:hover{
+            background: transparent;
+            color: #71cd14;
+        }
+    }
+    .contact__info{
+        padding-left: 20px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        span{
+            margin-right: 20px;
+            margin-bottom: 15px;
+            i{
+                color: #8f9195;
+                font-size: 27px;
+            }
+        }
+        &__title{
+            
+            h3{
+                font-size: 16px;
+                margin-bottom: 0;
+                font-family: "Heebo",sans-serif;
+                color: #2a2a2a;
+                font-weight: 500;
+            }
+            p{
+                color: #999999;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .form__container{
+        button{
+            width: 100% !important;
+        }
+    }
+}
